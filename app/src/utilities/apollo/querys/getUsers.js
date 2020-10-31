@@ -8,15 +8,7 @@ const getUsers = qql`
         id,
         name,
         username,
-        email,
-        website,
-        phone,
-        address {
-          street,
-          city,
-          zipcode,
-          suite
-        }
+        email
       }
     }
   }
