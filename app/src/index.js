@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import { ApolloProvider } from '@apollo/react-hooks'
 import client from './utilities/apollo/client'
+import './index.scss';
 
 const ApolloApp = () => {
   return (
