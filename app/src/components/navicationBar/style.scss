@@ -1,0 +1,17 @@
+@import '../../theme.scss';
+.navication-container {
+  display: flex;
+  background: $navication-bar-color;
+  height: 70px;
+}
+.navication-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+  span{
+    font-size: 22px;
+    font-weight: 500;
+    color: $font-color;
+  }
+}
