@@ -18,8 +18,8 @@ const getUserTodos = qql`
       todos {
         data {
         id,
-          title,
-          completed
+        title,
+        completed
         }
       }
     }

@@ -4,12 +4,11 @@ import UserProfile from './components/screens/UserProfile'
 import Users from './components/screens/Users'
 
 const App = () => {
-
   return (
     <Router>
       <Switch>
         <Route path={["/", "/users"]} component={Users} exact />
-        <Route path="/profile/:id" component={UserProfile} exact />
+        <Route path="/profile/:id/:index" component={UserProfile} exact />
       </Switch>
     </Router>
   );

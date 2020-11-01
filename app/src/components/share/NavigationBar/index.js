@@ -5,14 +5,14 @@ import './style.scss'
 
 const NavigationBar = () => {
   const { pathname } = useLocation()
-  const {id} = useParams()
+  const {id, index} = useParams()
   
   return (
     <div className="navication-container">
-      {pathname === `/profile/${id}` &&<BackToUsers/>}
+      {pathname === `/profile/${id}/${index}` &&<BackToUsers/>}
       <div className="navication-title">
         {(pathname === '/' || pathname === '/users') && <span>Users</span>}
-        {pathname === `/profile/${id}` &&<span>Back to Users</span>}
+        {pathname === `/profile/${id}/${index}` &&<span>Back to Users</span>}
       </div>
     </div>
   );
