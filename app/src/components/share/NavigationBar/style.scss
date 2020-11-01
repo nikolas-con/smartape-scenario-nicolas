@@ -15,16 +15,3 @@
     color: $font-color;
   }
 }
-
-.navication-back-button {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  width: 50px;
-  background: #dce3eb;
-  &:hover {
-    background: #becbda;
-    cursor: pointer;
-  }
-
-}

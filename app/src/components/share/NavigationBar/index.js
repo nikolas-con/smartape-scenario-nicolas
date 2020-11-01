@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useLocation, useParams } from 'react-router-dom'
 import BackToUsers from './BackToUsers'
 import './style.scss'
