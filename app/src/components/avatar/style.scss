@@ -1,0 +1,13 @@
+@import '../../theme.scss';
+@use 'sass:map';
+
+.avatar-contener{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-right: 22px;
+}
