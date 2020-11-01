@@ -1,6 +1,5 @@
 import qql from 'graphql-tag'
 
-
 const getUserTodos = qql`
   query getUserTodos($id: ID!) {
     user (id: $id) {
@@ -9,6 +8,7 @@ const getUserTodos = qql`
       email,
       website,
       phone,
+      id,
       address {
         street,
         suite,
