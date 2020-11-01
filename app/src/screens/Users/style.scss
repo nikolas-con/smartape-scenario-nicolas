@@ -10,11 +10,24 @@
   margin: 50px;
 }
 .users-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   border: 1px solid #e2e4e4;
   margin: 6px;
-  padding: 6px;
+  padding: 20px;
   width: 500px;
-  span{
-    margin-right: 6px;
+  height: 60px;
+  background: #ffffff;
+  &:hover {
+    cursor: pointer;
+    background:  #f2f2f2;
   }
+}
+
+.user-card-Details{
+  margin-right: 6px;
+  color: $font-color;
+  font-size: 20px;
+  margin-left: 42px;
 }

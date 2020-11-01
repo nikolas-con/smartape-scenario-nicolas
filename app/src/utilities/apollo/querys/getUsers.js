@@ -6,9 +6,7 @@ const getUsers = qql`
     users {
       data {
         id,
-        name,
-        username,
-        email
+        name
       }
     }
   }
