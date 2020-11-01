@@ -2,16 +2,29 @@
 .navication-container {
   display: flex;
   background: $navication-bar-color;
-  height: 70px;
+  height: 80px;
 }
 .navication-title{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 70px;
+  margin-left: 44px;
   span{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: $font-color;
   }
+}
+
+.navication-back-button {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 50px;
+  background: #dce3eb;
+  &:hover {
+    background: #becbda;
+    cursor: pointer;
+  }
+
 }

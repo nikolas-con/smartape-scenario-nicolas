@@ -1,28 +1,19 @@
 import React, { useContext } from 'react';
-import { useHistory, useLocation, useParams } from 'react-router-dom'
-import './style.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-
+import { useLocation } from 'react-router-dom'
 import Context from '../../utilities/context'
+import BackToUsers from './backToUsers'
+import './style.scss'
 
-const BackToUsers =()=> {
-  const history = useHistory()
-  return (
-    <div>
-      <FontAwesomeIcon onClick={()=> history.replace('/users')} icon={faChevronLeft}/>
-    </div>
-  )
-}
 const NavicationBar = () => {
   const {userId} = useContext(Context)
-  console.log(userId)
   const { pathname } = useLocation()
+  
   return (
     <div className="navication-container">
+      {pathname === `/profile/${userId}` &&<BackToUsers/>}
       <div className="navication-title">
         {(pathname === '/' || pathname === '/users') && <span>Users</span>}
-        {pathname === `/profile/${userId}` &&<> <BackToUsers/> <span>Back to Users</span></>}
+        {pathname === `/profile/${userId}` &&<span>Back to Users</span>}
       </div>
     </div>
   );
