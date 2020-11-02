@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import './style.scss'
+
 const ViewAll =({showAll, setShowAll, todosLength})=> {
   return (
     <div className={showAll ? "todo-view-all" : "todo-view-all-short todo-view-all"} onClick={()=> setShowAll(!showAll)}>

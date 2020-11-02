@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@apollo/react-hooks'
 import getUserTodos from '../../../utilities/apollo/queries/getUserTodos'
@@ -10,10 +10,11 @@ import './style.scss'
 
 
 const UserProdile = () => {
+
   const { id, index } = useParams()
 
-  const { loading, data } = useQuery(getUserTodos, { 
-    variables: { 
+  const { loading, data, error } = useQuery(getUserTodos, {
+    variables: {
       id,
       options: {
         operators: {
@@ -27,6 +28,11 @@ const UserProdile = () => {
 
 
   if (loading) return <Spinner />
+
+  if (error) {
+    alert('Something went wrong')
+  }
+
   return (
     <Layout>
       <div className="user-profile-container">
@@ -34,7 +40,7 @@ const UserProdile = () => {
         <Todos todos={data.user.todos.data} id={id} />
       </div>
     </Layout>
-  );
+  )
 }
 
-export default UserProdile;
+export default UserProdile

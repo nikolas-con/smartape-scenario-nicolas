@@ -1,7 +1,6 @@
 import qql from 'graphql-tag'
 
-
-const CREATE_TODO = qql `
+const CREATE_TODO = qql`
   mutation ($input: CreateTodoInput!) {
     createTodo(input: $input) {
       title,
@@ -9,6 +8,5 @@ const CREATE_TODO = qql `
     }
   }
 `
-
 
 export default CREATE_TODO

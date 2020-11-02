@@ -11,7 +11,7 @@ const App = () => {
         <Route path="/profile/:id/:index" component={UserProfile} exact />
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './style.scss'
 import { useQuery } from '@apollo/react-hooks'
 import getUsers from '../../../utilities/apollo/queries/getUsers'
@@ -8,10 +8,14 @@ import Layout from '../../share/Layout'
 
 const Users = () => {
 
-  const { loading, data } = useQuery(getUsers)
+  const { loading, data, error } = useQuery(getUsers)
 
   if (loading) return <Spinner />
-  console.log('user')
+
+  if(error) {
+    alert('Something went wrong')
+  }
+
   return (
     <Layout>
       <div className="users-container">
@@ -21,4 +25,4 @@ const Users = () => {
   );
 }
 
-export default Users;
+export default Users

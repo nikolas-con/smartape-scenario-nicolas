@@ -17,13 +17,7 @@ const backgrandColorSelector= (index)=> {
   return {'background': `${colors[color]}`}
 }
 
-
-const selectUncompletedTodo = (todos) => {
-  return todos.filter(todo => todo.completed && todo)
-}
-
 export {
   nameSplitter,
   backgrandColorSelector,
-  selectUncompletedTodo
 }

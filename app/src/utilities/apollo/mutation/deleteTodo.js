@@ -1,7 +1,6 @@
 import qql from 'graphql-tag'
 
-
-const DELETE_TODO = qql `
+const DELETE_TODO = qql`
   mutation ($id: ID!) {
     deleteTodo(id: $id) 
   }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { useMutation } from '@apollo/react-hooks'
@@ -12,7 +12,7 @@ const Add = ({ setShowAddTodo, id }) => {
     variables: { input: { title, completed: false } },
     refetchQueries: [{
       query: getUserTodos,
-      variables: { 
+      variables: {
         id,
         options: {
           operators: {
@@ -24,12 +24,12 @@ const Add = ({ setShowAddTodo, id }) => {
       }
     }]
   })
-  
+
   if (error) {
     alert('Something went wrong')
   }
 
-  const create = ()=> {
+  const create = () => {
     createTodo()
     setShowAddTodo(false)
   }

@@ -1,9 +1,11 @@
 @import '../../../theme.scss';
+
 .navication-container {
   display: flex;
   background: $navication-bar-color;
   height: 80px;
 }
+
 .navication-title{
   display: flex;
   align-items: center;

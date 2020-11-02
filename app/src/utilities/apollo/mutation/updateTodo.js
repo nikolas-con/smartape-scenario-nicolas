@@ -1,6 +1,5 @@
 import qql from 'graphql-tag'
 
-
 const UPDATE_TODO = qql`
   mutation ($id: ID!, $input: UpdateTodoInput!) {
     updateTodo(id: $id,input: $input) {
@@ -10,6 +9,5 @@ const UPDATE_TODO = qql`
     }
   }
 `
-
 
 export default UPDATE_TODO

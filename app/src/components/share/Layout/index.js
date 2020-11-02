@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import NavicationBar from '../NavigationBar'
 
-const Layout =({children})=> {
+const Layout = ({ children }) => {
   return (
     <div>
-      <NavicationBar/>
+      <NavicationBar />
       {children}
     </div>
   )
