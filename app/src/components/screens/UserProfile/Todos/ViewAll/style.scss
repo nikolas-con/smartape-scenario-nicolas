@@ -1,0 +1,18 @@
+.todo-view-all {
+  height: 20px;
+  display: flex;
+  border-top: 1px solid #e2e4e4;
+  padding: 18px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// .todo-view-all-show {
+//   background: red;
+// }
+
+.todo-view-all-short {
+  color: #6abaf9;
+  background: #e2e4e4;
+}

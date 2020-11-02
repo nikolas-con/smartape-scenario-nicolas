@@ -1,0 +1,25 @@
+@import '../../../../../theme.scss';
+
+.todos-add-todo-container{
+  padding: 10px;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  border-bottom: 1px solid #e2e4e4;
+  display: flex;
+  flex-direction: row;
+  input {
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
+.todos-add-todo-buttons {
+  position: absolute;
+  right: 120px;
+  font-size: 16px;
+  color: $font-color;
+  &:hover {
+    cursor: pointer;
+  }
+}

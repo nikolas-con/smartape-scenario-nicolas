@@ -1,0 +1,34 @@
+@import '../../../../theme.scss';
+
+.todos-contener{
+  height: 100%;
+  width: 500px;
+  border: 1px solid #e2e4e4;
+  background: #ffffff;
+  margin-left: 20px;
+}
+
+.todo-contener {
+  margin: 16px;
+}
+
+.todos-title {
+  border-bottom: 1px solid #e2e4e4;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.todos-title-font {
+  font-size: 22px;
+  color: $font-color;
+  font-weight: 400;
+}
+
+.todos-title-add-button {
+  margin-left: 350px;
+  font-size: 22px;
+  &:hover {
+    cursor: pointer;
+  }
+}
