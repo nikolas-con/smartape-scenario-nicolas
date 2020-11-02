@@ -13,6 +13,8 @@
 
 + To run the app:
 
+  cd app
+  
   npm run start
 
 
